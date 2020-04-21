@@ -9,11 +9,11 @@ import java.util.List;
 
 @Component
 @RequiredArgsConstructor
-
 public class CarService {
     private final CarRepository carRepository;
 
     public List<Car> getCars() {
         return carRepository.findAll();
     }
+
 }

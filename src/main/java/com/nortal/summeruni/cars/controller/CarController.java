@@ -3,9 +3,7 @@ package com.nortal.summeruni.cars.controller;
 import com.nortal.summeruni.cars.entity.Car;
 import com.nortal.summeruni.cars.service.CarService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +19,5 @@ public class CarController {
     public List<Car> getCars() {
         return new ArrayList<Car>();
     }
-
 
 }
