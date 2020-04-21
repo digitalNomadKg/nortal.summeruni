@@ -20,6 +20,11 @@ public class CarController {
         return new ArrayList<Car>();
     }
 
+    @GetMapping("/{id}")
+    public Car getCar(@PathVariable Long id) {
+        return carService.getCar(id);
+    }
+
     @PostMapping
     public Long addCar(@RequestBody Car car) {
         return carService.addCar(car);
