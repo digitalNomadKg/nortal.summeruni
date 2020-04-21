@@ -16,4 +16,10 @@ public class CarService {
         return carRepository.findAll();
     }
 
+<<<<<<< HEAD
+=======
+    public Car getCar(Long id) {
+        return carRepository.findById(id).orElseThrow(() -> new RuntimeException("Car with specified id was not found"));
+    }
+>>>>>>> master
 }
