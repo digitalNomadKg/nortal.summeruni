@@ -16,4 +16,8 @@ public class CarService {
     public List<Car> getCars() {
         return carRepository.findAll();
     }
+
+    public Car getCar(Long id) {
+        return carRepository.findById(id).orElseThrow(() -> new RuntimeException("Car with specified id was not found"));
+    }
 }
